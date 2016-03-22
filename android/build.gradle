@@ -30,6 +30,9 @@ repositories {
 }
 
 dependencies {
-    compile 'com.facebook.react:react-native:+'
-    compile 'com.facebook.android:facebook-android-sdk:4.10.0'
+    compile ('com.facebook.react:react-native:+'){
+        exclude module: 'fbcore'
+        exclude module: 'fresco'
+    }
+    compile 'com.facebook.android:facebook-android-sdk:4.6.0'
 }
