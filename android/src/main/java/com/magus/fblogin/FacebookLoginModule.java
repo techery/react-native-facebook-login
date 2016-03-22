@@ -93,7 +93,7 @@ public class FacebookLoginModule extends ReactContextBaseJavaModule implements A
     }
 
     private WritableArray convertSetToWritableArray(Set<String> permissions) {
-        return Arguments.fromArray(new ArrayList<>(permissions));
+        return Arguments.fromArray(permissions.toArray(new String[permissions.size()]));
     }
 
     private String formatExpirationDate(Date expirationDate) {
