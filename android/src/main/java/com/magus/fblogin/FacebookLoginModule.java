@@ -9,7 +9,6 @@ import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
-import com.facebook.Profile;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.react.bridge.ActivityEventListener;
@@ -86,7 +85,7 @@ public class FacebookLoginModule extends ReactContextBaseJavaModule implements A
         WritableMap credentials = Arguments.createMap();
         credentials.putString("token", accessToken.getToken());
         credentials.putString("tokenExpirationDate", formatExpirationDate(accessToken.getExpires()));
-        credentials.putString("userId", Profile.getCurrentProfile().getId());
+        credentials.putString("userId", accessToken.getUserId());
         credentials.putArray("permissions", convertSetToWritableArray(accessToken.getPermissions()));
 
         return credentials;
