@@ -125,7 +125,7 @@ public class FacebookLoginModule extends ReactContextBaseJavaModule implements A
 
     @Override
     public String getName() {
-        return "FBLoginManager";
+        return "RNFBLoginManager";
     }
 
     @ReactMethod
