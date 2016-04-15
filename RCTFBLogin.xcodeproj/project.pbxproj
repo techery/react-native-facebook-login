@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4F3A6BA31ACFC16C00CA65F7 /* RCTFBLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A6BA01ACFC16C00CA65F7 /* RCTFBLogin.m */; };
-		4F3A6BA41ACFC16C00CA65F7 /* RCTFBLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3A6BA21ACFC16C00CA65F7 /* RCTFBLoginManager.m */; };
 		4F3A6BA91ACFC19D00CA65F7 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3A6BA51ACFC19D00CA65F7 /* Bolts.framework */; };
 		4F3A6BAA1ACFC19D00CA65F7 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3A6BA61ACFC19D00CA65F7 /* FBSDKCoreKit.framework */; };
 		4F3A6BAB1ACFC19D00CA65F7 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3A6BA71ACFC19D00CA65F7 /* FBSDKLoginKit.framework */; };
 		4F3A6BAC1ACFC19D00CA65F7 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3A6BA81ACFC19D00CA65F7 /* FBSDKShareKit.framework */; };
+		C2336DF21CC10E450076DA48 /* RCTRNFBLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C2336DF11CC10E450076DA48 /* RCTRNFBLoginManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,12 +31,12 @@
 		4F3A6B5B1ACFBCC500CA65F7 /* libRCTFBLogin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTFBLogin.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F3A6B9F1ACFC16C00CA65F7 /* RCTFBLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTFBLogin.h; path = RCTFBLogin/RCTFBLogin.h; sourceTree = "<group>"; };
 		4F3A6BA01ACFC16C00CA65F7 /* RCTFBLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTFBLogin.m; path = RCTFBLogin/RCTFBLogin.m; sourceTree = "<group>"; };
-		4F3A6BA11ACFC16C00CA65F7 /* RCTFBLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTFBLoginManager.h; path = RCTFBLogin/RCTFBLoginManager.h; sourceTree = "<group>"; };
-		4F3A6BA21ACFC16C00CA65F7 /* RCTFBLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTFBLoginManager.m; path = RCTFBLogin/RCTFBLoginManager.m; sourceTree = "<group>"; };
 		4F3A6BA51ACFC19D00CA65F7 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
 		4F3A6BA61ACFC19D00CA65F7 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		4F3A6BA71ACFC19D00CA65F7 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		4F3A6BA81ACFC19D00CA65F7 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		C2336DF01CC10E450076DA48 /* RCTRNFBLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTRNFBLoginManager.h; path = RCTFBLogin/RCTRNFBLoginManager.h; sourceTree = "<group>"; };
+		C2336DF11CC10E450076DA48 /* RCTRNFBLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTRNFBLoginManager.m; path = RCTFBLogin/RCTRNFBLoginManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +57,10 @@
 		4F3A6B521ACFBCC500CA65F7 = {
 			isa = PBXGroup;
 			children = (
+				C2336DF01CC10E450076DA48 /* RCTRNFBLoginManager.h */,
+				C2336DF11CC10E450076DA48 /* RCTRNFBLoginManager.m */,
 				4F3A6B9F1ACFC16C00CA65F7 /* RCTFBLogin.h */,
 				4F3A6BA01ACFC16C00CA65F7 /* RCTFBLogin.m */,
-				4F3A6BA11ACFC16C00CA65F7 /* RCTFBLoginManager.h */,
-				4F3A6BA21ACFC16C00CA65F7 /* RCTFBLoginManager.m */,
 				4F3A6B961ACFBEC400CA65F7 /* FacebookSDK */,
 				4F3A6B5C1ACFBCC500CA65F7 /* Products */,
 			);
@@ -112,7 +112,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0620;
-				ORGANIZATIONNAME = "Noah";
+				ORGANIZATIONNAME = Noah;
 				TargetAttributes = {
 					4F3A6B5A1ACFBCC500CA65F7 = {
 						CreatedOnToolsVersion = 6.2;
@@ -142,7 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F3A6BA31ACFC16C00CA65F7 /* RCTFBLogin.m in Sources */,
-				4F3A6BA41ACFC16C00CA65F7 /* RCTFBLoginManager.m in Sources */,
+				C2336DF21CC10E450076DA48 /* RCTRNFBLoginManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
