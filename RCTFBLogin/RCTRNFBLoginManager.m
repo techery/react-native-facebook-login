@@ -5,9 +5,9 @@
 #import "RCTLog.h"
 
 #import "RCTFBLogin.h"
-#import "RCTFBLoginManager.h"
+#import "RCTRNFBLoginManager.h"
 
-@implementation RCTFBLoginManager
+@implementation RCTRNFBLoginManager
 {
   RCTFBLogin *_fbLogin;
   NSArray *_defaultPermissions;
